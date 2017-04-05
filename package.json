@@ -22,7 +22,6 @@
   "homepage": "https://github.com/RodeyManager/gulp-jsminer#readme",
   "dependencies": {
     "gulp-util": "^3.0.8",
-    "jsmin2": "^1.2.1",
     "through2": "^2.0.3",
     "uglify-js": "^2.8.21"
   },
