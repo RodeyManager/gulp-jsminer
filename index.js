@@ -29,7 +29,6 @@ var jsminer = function(options){
         if (file.isBuffer() && /\.(js|es)$/i.test(file.path)) {
             try {
                 var content = getFileContent(file.path) || file.contents.toString('utf8');
-                console.log(content);
                 var result = UglifyJS.minify(content, option);
                 file.contents = new Buffer(result.code);
             }
