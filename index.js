@@ -25,9 +25,11 @@ var jsminer = function(options){
             this.emit('error', new PluginError(PLUGIN_NAME, 'Stream content is not supported'));
             return next(null, file);
         }
+
         if (file.isBuffer() && /\.(js|es)$/i.test(file.path)) {
             try {
-                var content = getFileContent(file.path);
+                var content = getFileContent(file.path) || file.contents.toString('utf8');
+                console.log(content);
                 var result = UglifyJS.minify(content, option);
                 file.contents = new Buffer(result.code);
             }
