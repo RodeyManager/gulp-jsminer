@@ -1,6 +1,6 @@
-### gulp-jsminer
+### gulp-jsminer (javascript压缩)
 
-```$xslt
+```
     const gulpJsminer = require('gulp-jsminer');
     
     gulp.task('default', () => {
