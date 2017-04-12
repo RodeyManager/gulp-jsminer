@@ -7,7 +7,7 @@ var fs          = require('fs'),
     UglifyJS    = require("uglify-js"),
     PluginError = require('gulp-util').PluginError;
 
-var PLUGIN_NAME = 'gulp-html-inline';
+var PLUGIN_NAME = 'gulp-jsminer';
 
 //获取文件内容
 var getFileContent = function(file){
