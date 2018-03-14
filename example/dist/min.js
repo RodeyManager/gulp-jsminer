@@ -1,0 +1,1 @@
+(function(){"use strict";var n=function(){this.name="Rodey"};window.SYST=new n}).call(this),window.onload=function(){console.log(SYST)},document.body.addEventListener("click",function(n){var o=document.querySelector("#content").innerHTML;alert(o)},!1);

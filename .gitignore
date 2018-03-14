@@ -1,5 +1,5 @@
 .idea
 .temp.js
 .test.js
-example
 node_modules
+package-lock.json

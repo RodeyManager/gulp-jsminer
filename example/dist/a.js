@@ -1,0 +1,1 @@
+(function(){"use strict";var n=function(){this.name="Rodey"};window.SYST=new n}).call(this);
