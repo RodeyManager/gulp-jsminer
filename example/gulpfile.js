@@ -21,6 +21,6 @@ gulp.task('concat', function() {
         .src('assets/js/*.js')
         .pipe(concat('min.js'))
         // options https://www.npmjs.com/package/uglify-js#minify-options
-        .pipe(jsminer({ toplevel: true }))
+        .pipe(jsminer())
         .pipe(gulp.dest('dist'));
 });
