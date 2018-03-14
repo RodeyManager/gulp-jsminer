@@ -3,7 +3,6 @@
  */
 'use strict';
 const fs = require('fs'),
-    util = require('util'),
     through2 = require('through2'),
     UglifyJS = require('uglify-js'),
     PluginError = require('plugin-error');
@@ -11,12 +10,7 @@ const fs = require('fs'),
 const PLUGIN_NAME = 'gulp-jsminer';
 
 let jsminer = function(options) {
-    let option = util._extend(
-        {
-            fromString: true
-        },
-        options || {}
-    );
+    let option = options || {};
     return through2.obj(function(file, enc, next) {
         if (file.isNull()) {
             return next(null, file);
