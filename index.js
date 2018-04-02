@@ -7,7 +7,7 @@ const
     util        = require('util'),
     through2    = require('through2'),
     UglifyJS    = require("uglify-js"),
-    PluginError = require('gulp-util').PluginError;
+    PluginError = require('plugin-error');
 
 const PLUGIN_NAME = 'gulp-jsminer';
 
@@ -33,7 +33,7 @@ let jsminer = function(options){
                 file.contents = new Buffer(result.code);
             }
             catch (err) {
-                this.emit('error', new PluginError(PLUGIN_NAME, ''));
+                this.emit('error', new PluginError(PLUGIN_NAME, err.message));
             }
         }
 
