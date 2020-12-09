@@ -1,6 +1,6 @@
 {
     "name": "gulp-jsminer",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "javascript mini",
     "main": "index.js",
     "scripts": {
