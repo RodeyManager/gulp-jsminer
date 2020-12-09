@@ -12,7 +12,7 @@
 
 ## options
 
-see [ugligy-js](https://www.npmjs.com/package/uglify-js#minify-options) options
+see [terser](https://github.com/terser/terser#command-line-options) options
 
 ### Listen
 
