@@ -1,6 +1,6 @@
 {
     "name": "gulp-jsminer",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "javascript mini",
     "main": "index.js",
     "scripts": {
@@ -14,6 +14,7 @@
     "keywords": [
         "gulp",
         "jsmin",
+        "uglify-es",
         "terser"
     ],
     "author": "Rodey Luo",
