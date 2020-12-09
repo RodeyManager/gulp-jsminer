@@ -1,0 +1,1 @@
+"use strict";a=8,b=10;

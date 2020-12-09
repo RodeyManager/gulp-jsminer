@@ -1,1 +1,1 @@
-window.onload=function(){console.log(SYST)};
+"use strict";window.onload=function(){console.log(SYST)};

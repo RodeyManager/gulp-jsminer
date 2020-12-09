@@ -1,11 +1,13 @@
-;(function(){
+class SYST {
+  constructor(name = 'SYST') {
+    this.name = name;
+    this.version = '1.0.0';
+  }
 
-    'use strict';
+  version() {
+    return `this SYST current version: ${this.version}`;
+  }
+}
 
-    var SYST = function(){
-        this.name = 'Rodey';
-    };
-
-    window.SYST = new SYST();
-
-}).call(this);
+var syst = new SYST('GULP-JSMINER');
+console.log(syst.version());

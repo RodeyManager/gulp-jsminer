@@ -3,24 +3,20 @@
  */
 
 var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    jsminer = require('../index');
+  concat = require('gulp-concat'),
+  babel = require('gulp-babel'),
+  jsminer = require('../index');
 
-var basePath = process.cwd();
-console.log(basePath);
-
-gulp.task('default', function() {
-    gulp
-        .src('assets/js/*')
-        .pipe(jsminer())
-        .pipe(gulp.dest('dist'));
+gulp.task('default', function () {
+  gulp.src('assets/js/*').pipe(babel()).pipe(jsminer()).pipe(gulp.dest('dist'));
 });
 
-gulp.task('concat', function() {
-    gulp
-        .src('assets/js/*.js')
-        .pipe(concat('min.js'))
-        // options https://www.npmjs.com/package/uglify-js#minify-options
-        .pipe(jsminer())
-        .pipe(gulp.dest('dist'));
+gulp.task('concat', function () {
+  gulp
+    .src('assets/js/*.js')
+    .pipe(babel())
+    .pipe(concat('min.js'))
+    // options https://github.com/terser/terser#command-line-options
+    .pipe(jsminer())
+    .pipe(gulp.dest('dist'));
 });

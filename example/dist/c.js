@@ -1,1 +1,1 @@
-document.body.addEventListener("click",function(e){var n=document.querySelector("#content").innerHTML;alert(n)},!1);
+"use strict";document.body.addEventListener("click",(function(e){var t=document.querySelector("#content").innerHTML;alert(t)}),!1);

@@ -1,1 +1,1 @@
-(function(){"use strict";window.SYST=new function(){this.name="Rodey"}}).call(this);
+"use strict";var e=require("@babel/runtime/helpers/interopRequireDefault"),r=e(require("@babel/runtime/helpers/classCallCheck")),i=e(require("@babel/runtime/helpers/createClass")),n=new(function(){function e(){var i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"SYST";(0,r.default)(this,e),this.name=i,this.version="1.0.0"}return(0,i.default)(e,[{key:"version",value:function(){return"this SYST current version: ".concat(this.version)}}]),e}())("GULP-JSMINER");console.log(n.version());
