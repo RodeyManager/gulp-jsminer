@@ -1,4 +1,4 @@
-class ML {
+class Test {
 
     private name: string;
     private id: number = 0;
@@ -13,3 +13,6 @@ class ML {
     }
 
 }
+
+const test = new Test('GULP-JSMINER', 2);
+console.log(test.say('Hello '));

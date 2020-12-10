@@ -5,6 +5,7 @@
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
   babel = require('gulp-babel'),
+  ts = require('gulp-typescript'),
   jsminer = require('../index');
 
 gulp.task('default', function () {
@@ -19,4 +20,8 @@ gulp.task('concat', function () {
     // options https://github.com/terser/terser#command-line-options
     .pipe(jsminer())
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('ts', function () {
+  gulp.src('assets/js/*.ts').pipe(ts()).pipe(jsminer()).pipe(gulp.dest('dist'));
 });

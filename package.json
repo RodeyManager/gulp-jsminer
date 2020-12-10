@@ -1,11 +1,12 @@
 {
     "name": "gulp-jsminer",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "description": "javascript mini",
     "main": "index.js",
     "scripts": {
         "test": "gulp --gulpfile ./example/gulpfile.js",
-        "concat": "gulp concat --gulpfile ./example/gulpfile.js"
+        "concat": "gulp concat --gulpfile ./example/gulpfile.js",
+        "ts": "gulp ts --gulpfile ./example/gulpfile.js"
     },
     "repository": {
         "type": "git",
@@ -34,6 +35,8 @@
         "@babel/preset-env": "^7.12.7",
         "gulp": "^3.9.1",
         "gulp-babel": "^8.0.0",
-        "gulp-concat": "^2.6.1"
+        "gulp-concat": "^2.6.1",
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "typescript": "^4.1.2"
     }
 }
